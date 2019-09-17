@@ -13,15 +13,14 @@ var serve = serveStatic('public', {'index': ['index.html', 'index.htm']})
 var server = http.createServer(function onRequest (req, res) {
     //路由
     const pathname = url.parse(req.url).pathname;
-    const data = fs.readFileSync('data.json', 'utf8');
+    const data = fs.readFileSync('./data.json', 'utf8');
     if(pathname == '/addPraise'){
         console.log('addPraise');
         //拿到GET请求参数，就是拿到地址栏中的东西。
-        // const queryJSON = url.parse(req.url, true).query;
-        // const praiseList = JSON.parse(data.toString()); 
-        // praiseList.push(queryJSON);
-        // fs.writeFile('data.json', JSON.stringify(praiseList), (err) => {
-        fs.writeFile('data.json', JSON.stringify(req.url), (err) => {
+        const queryJSON = url.parse(req.url, true).query;
+        const praiseList = JSON.parse(data.toString()); 
+        praiseList.push(queryJSON);
+        fs.writeFile('./data.json', JSON.stringify(praiseList), (err) => {
             //返回状态码
             if(err){
                 res.end('error');

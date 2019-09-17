@@ -1,26 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Card from './components/Card';
+import http from './http/axios';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      praiseList: []
+    }
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1>Appen Praise</h1>
+        </header>
+        <div className="App-content">
+          <div className="App-background">
+            hahah
+          </div>
+          <div>
+            <div className="App-list">
+              {this.state.praiseList.map((item, index) => {
+                return (
+                  <Card key={index} praiseObj={item}></Card>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  componentDidMount() {
+    http.$reqGet('/appen/getPraiseList').then((res) => {
+      const list = res.data || [];
+      this.setState({
+        praiseList: list
+      });
+    }).catch(() => {
+      console.log('error');
+    });
+  }
 }
 
 export default App;

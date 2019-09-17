@@ -10,7 +10,7 @@
         "user_id": "U2147483697\n",
         "user_name": "Steve\n",
         "command": "/appenpraise\n",
-        "text": "'hello world'\n",
+        "text": "@JohnLi did something great!!!",
         "response_url": "https://hooks.slack.com/commands/1234/5678\n",
         "trigger_id": "13345224609.738474920.8088930838d88f008e0"
     },
@@ -25,7 +25,7 @@
         "user_id": "U2147483697\n",
         "user_name": "Steve\n",
         "command": "/appenpraise\n",
-        "text": "'hello world'\n",
+        "text": "@JohnLi did something great!!!",
         "response_url": "https://hooks.slack.com/commands/1234/5678\n",
         "trigger_id": "13345224609.738474920.8088930838d88f008e0"
     },
@@ -40,7 +40,7 @@
         "user_id": "U2147483697\n",
         "user_name": "Steve\n",
         "command": "/appenpraise\n",
-        "text": "'hello world'\n",
+        "text": "@JohnLi did something great!!!",
         "response_url": "https://hooks.slack.com/commands/1234/5678\n",
         "trigger_id": "13345224609.738474920.8088930838d88f008e0"
     },
@@ -55,7 +55,37 @@
         "user_id": "U2147483697\n",
         "user_name": "Steve\n",
         "command": "/appenpraise\n",
-        "text": "'hello world'\n",
+        "text": "@JohnLi did something great!!! did something great!!! did something great!!! did something great!!! did something great!!!",
+        "response_url": "https://hooks.slack.com/commands/1234/5678\n",
+        "trigger_id": "13345224609.738474920.8088930838d88f008e0"
+    },
+    {
+        "token": "gIkuvaNzQIHg97ATvDxqgjtO\n",
+        "team_id": "T0001\n",
+        "team_domain": "example\n",
+        "enterprise_id": "E0001\n",
+        "enterprise_name": "Globular Construct Inc\n",
+        "channel_id": "C2147483705\n",
+        "channel_name": "test\n",
+        "user_id": "U2147483697\n",
+        "user_name": "Steve\n",
+        "command": "/appenpraise\n",
+        "text": "@John did something great!!!",
+        "response_url": "https://hooks.slack.com/commands/1234/5678\n",
+        "trigger_id": "13345224609.738474920.8088930838d88f008e0"
+    },
+    {
+        "token": "gIkuvaNzQIHg97ATvDxqgjtO\n",
+        "team_id": "T0001\n",
+        "team_domain": "example\n",
+        "enterprise_id": "E0001\n",
+        "enterprise_name": "Globular Construct Inc\n",
+        "channel_id": "C2147483705\n",
+        "channel_name": "test\n",
+        "user_id": "U2147483697\n",
+        "user_name": "Steve\n",
+        "command": "/appenpraise\n",
+        "text": "@FionaLi did something great!!!",
         "response_url": "https://hooks.slack.com/commands/1234/5678\n",
         "trigger_id": "13345224609.738474920.8088930838d88f008e0"
     }
