@@ -18,14 +18,16 @@ var server = http.createServer(function onRequest (req, res) {
         console.log('addPraise');
         //拿到GET请求参数，就是拿到地址栏中的东西。
         const queryJSON = url.parse(req.url, true).query;
-        const praiseList = JSON.parse(data.toString()); 
+        const praiseList = JSON.parse(data.toString());
+        const text = queryJson.text;
+        const name = text.substring(text.indexOf('@'), text.indexOf(' '));
         praiseList.push(queryJSON);
         fs.writeFile('./data.json', JSON.stringify(praiseList), (err) => {
             //返回状态码
             if(err){
                 res.end('error');
             }else{
-                res.end('ok');
+                res.end(name);
             }
         })
         return;
