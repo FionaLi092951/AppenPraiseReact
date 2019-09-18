@@ -9,6 +9,10 @@ In the project directory, you can run:
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+Change ip address "http://192.168.1.12" to your own computer IP address in file /deploy/dev/nginx.conf and then:
+Run docker run --name appen-app -p 3003:80 -v `pwd`:/usr/share/nginx/html:ro -v `pwd`"/deploy/dev/nginx.conf":/etc/nginx/conf.d/default.conf  -d nginx
+to enable axios call of the UI page, open http://127.0.0.1:3003 to view it.
+
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
