@@ -21,6 +21,7 @@ You will also see any lint errors in the console.
 
 get praise list:
   http://orca.emotibot.com:8136/appen/getPraiseList
+  
 add a praise: 
   http://orca.emotibot.com:8136/appen/addPraise?token=gIkuvaNzQIHg97ATvDxqgjtO
   &team_id=T0001
@@ -35,6 +36,7 @@ add a praise:
   &text='hello world'
   &response_url=https://hooks.slack.com/commands/1234/5678
   &trigger_id=13345224609.738474920.8088930838d88f008e0
+  
 clear praise: 
   http://orca.emotibot.com:8136/appen/clearPraiseList
 
