@@ -42,7 +42,9 @@ clear praise:
 
 1. Login Slack with workspace "ZhuJianTechnoglogy.slack.com", user: fionali092951@gmail.com/ Fiona092951
     https://app.slack.com/client/TMZRLCZEE/CN66X75GR/app_profile/A0F82E8CA
+    
 2. In Channel '#appenpraise', write command "/appenpraise @FionaLi did something great" and send the message
    message "ok" will be responsed.
+   
 3. The praise will be added, and can be displayed by api and ui page
 
