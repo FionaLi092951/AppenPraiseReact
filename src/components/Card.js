@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Card.css';
+import './Card.scss';
 
 class Card extends Component {
 
@@ -8,19 +8,20 @@ class Card extends Component {
     let name = '';
     let text = '';
     let createdBy = '';
-    if (props.praiseObj.text) {
+    // initialize @user & praise text
+    if (props.praiseObj && props.praiseObj.text) {
       const inputText = props.praiseObj.text;
       const index1 = inputText.indexOf('@');
       const index2 = inputText.indexOf(' ', index1);
       name = inputText.substring(index1, index2);
       text = inputText.substring(index2);
     }
-    if (props.praiseObj.user_name) {
+    // initialize the created by user
+    if (props.praiseObj && props.praiseObj.user_name) {
       createdBy = props.praiseObj.user_name;
     }
     this.state = {
-      type: parseInt(Math.random() * 2),
-      imageUrl: `../images/${parseInt(Math.random() * 11)}.jpg`,
+      type: parseInt(Math.random() * 2), // generate type by random, 0 or 1
       name,
       text,
       createdBy,
@@ -28,6 +29,7 @@ class Card extends Component {
   }
 
   render() {
+    // require local images by random
     const tempImage = require(`../images/${parseInt(Math.random() * 11)}.jpg`);
     return (
       <div className="card">

@@ -1,0 +1,79 @@
+.card{
+  width: 250px;
+  height: 250px;
+  margin: 16px 10px;
+  background: #FFFFFF;
+  border-radius:2px;
+  border: 1px solid rgba(233,233,233,1);
+  position: relative;
+  &:hover{
+    box-shadow:0px 5px 10px 0px rgba(0,0,0,0.15);
+    .additional-info{
+      display: inline-block;
+    }
+  }
+  .card-1{
+    position: relative;
+    .back-image{
+      width: 100%;
+      position: absolute;
+      opacity: 0.7;
+    }
+    .content-box{
+      position: absolute;
+      width: 210px;
+      height: 210px;
+      overflow: auto;
+      padding: 20px;
+      .name{
+        color: #333333;
+        font-size: 18px;
+      }
+      .text{
+        color: #666666;
+        line-height: 30px;
+        font-size: 16px;
+      }
+    }
+  }
+  .card-2{
+    position: relative;
+    padding: 20px;
+    .image-box{
+      display: flex;
+      align-items: center;
+      .avatar-image{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+      }
+      .name{
+        color: rgb(227, 91, 129);
+        font-size: 18px;
+        margin-left: 20px;
+      }
+    }
+    .text{
+      color: #666666;
+      line-height: 30px;
+      font-size: 16px;
+      height: 120px;
+      overflow: auto;
+    }
+  }
+  .additional-info{
+    position: absolute;
+    bottom: -1px;
+    width: 230px;
+    background-color: #0000005C;
+    font-size: 12px;
+    text-align: right;
+    height: 24px;
+    line-height: 24px;
+    padding-right: 20px;
+    display: none;
+  }
+  .hide{
+    display: none;
+  }
+}

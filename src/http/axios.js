@@ -1,5 +1,5 @@
 /*
-api.js is used to wrapped to a request library
+axios.js is used to wrapped to a request library
 now the wrapped function includes: get, post, custom
 */
 import axios from 'axios';

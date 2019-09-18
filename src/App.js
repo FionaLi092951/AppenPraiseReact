@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Card from './components/Card';
 import http from './http/axios';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
 
@@ -14,23 +14,16 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App-wrapper">
         <header className="App-header">
           <h1>Appen Praise</h1>
         </header>
         <div className="App-content">
-          <div className="App-background">
-            hahah
-          </div>
-          <div>
-            <div className="App-list">
-              {this.state.praiseList.map((item, index) => {
-                return (
-                  <Card key={index} praiseObj={item}></Card>
-                )
-              })}
-            </div>
-          </div>
+          {this.state.praiseList.map((item, index) => {
+            return (
+              <Card key={index} praiseObj={item}></Card>
+            )
+          })}
         </div>
       </div>
     );
