@@ -19,10 +19,10 @@ You will also see any lint errors in the console.
 
 ### `API`
 
-get praise list:
+Get praise list:
   http://orca.emotibot.com:8136/appen/getPraiseList
   
-add a praise: 
+Add a praise: 
   http://orca.emotibot.com:8136/appen/addPraise?token=gIkuvaNzQIHg97ATvDxqgjtO
   &team_id=T0001
   &team_domain=example
@@ -37,8 +37,9 @@ add a praise:
   &response_url=https://hooks.slack.com/commands/1234/5678
   &trigger_id=13345224609.738474920.8088930838d88f008e0
   
-clear praise: 
+Clear praise: 
   http://orca.emotibot.com:8136/appen/clearPraiseList
+  
 
 ### `Scenario`
 
@@ -48,5 +49,5 @@ clear praise:
 2. In Channel '#appenpraise', write command "/appenpraise @FionaLi did something great" and send the message
    message "ok" will be responsed.
    
-3. The praise will be added, and can be displayed by api and ui page
+3. The praise will be added, and can be fetched by API and displayed on UI page.
 
